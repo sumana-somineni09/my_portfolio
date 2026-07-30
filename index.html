@@ -237,6 +237,38 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
         <p class="outcome">~90% reduction in manual interview evaluation · deployed in production.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">OpenAI</span><span class="tag">Speech-to-Text</span></div>
       </article>
+      <article class="pcard" data-reveal>
+        <span class="context">Personal project · Deployed</span>
+        <h3>Fake News Detection System</h3>
+        <div class="block"><strong>Problem</strong><p>Misinformation spreads faster than fact-checkers can respond, and readers have no quick way to gauge whether an article is trustworthy.</p></div>
+        <div class="block"><strong>What I built</strong><p>End-to-end NLP classifier over 72,000 articles — cleaning, tokenization, and TF-IDF feeding five models (Logistic Regression, Decision Tree, Random Forest, Naive Bayes, Gradient Boosting) tuned with GridSearchCV, served through a containerized FastAPI REST API with an interactive UI.</p></div>
+        <p class="outcome">&gt;95% accuracy on the top models · 36K reliable / 36K unreliable articles · deployed and publicly accessible.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">NLP</span><span class="tag">FastAPI</span><span class="tag">Docker</span></div>
+      </article>
+      <article class="pcard" data-reveal>
+        <span class="context">Personal project · In progress</span>
+        <h3>Email Spam Classification</h3>
+        <div class="block"><strong>Problem</strong><p>Spam filters have to be both accurate and cheap to run at volume — and it isn't obvious whether a modern LLM beats a classical model at the job.</p></div>
+        <div class="block"><strong>What I built</strong><p>TF-IDF pipeline (5,000 features) over the Enron corpus comparing SVM, Logistic Regression, and Decision Tree with confusion-matrix analysis. Currently extending it with a zero-shot LLM baseline benchmarked on accuracy, latency, and cost.</p></div>
+        <p class="outcome">SVM 98.4% accuracy (F1 0.985) · Logistic Regression 98.2% · Decision Tree 91.5%.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">SVM</span><span class="tag">NLP</span></div>
+      </article>
+      <article class="pcard" data-reveal>
+        <span class="context">M.S. coursework · Big Data</span>
+        <h3>Supermarket Sales Analysis</h3>
+        <div class="block"><strong>Problem</strong><p>Aggregating transaction data across branches, months, and product lines is slow to do serially and doesn't scale past a single machine.</p></div>
+        <div class="block"><strong>What I built</strong><p>Distributed MapReduce job with separate Mapper, Combiner, and Reducer stages in Python, run through Hadoop Streaming on HDFS, aggregating sales by branch, gender, city, month, and product line.</p></div>
+        <p class="outcome">Five comparative visualizations including a multidimensional product-line breakdown.</p>
+        <div class="tags"><span class="tag">Hadoop</span><span class="tag">MapReduce</span><span class="tag">HDFS</span><span class="tag">Python</span><span class="tag">Linux</span></div>
+      </article>
+      <article class="pcard" data-reveal>
+        <span class="context">M.S. coursework · Data Visualization</span>
+        <h3>COVID-19 Analysis, South Korea</h3>
+        <div class="block"><strong>Problem</strong><p>Pandemic data is only useful if people can explore it — static charts hide the patterns that matter by region and over time.</p></div>
+        <div class="block"><strong>What I built</strong><p>Interactive R Markdown report combining time-series, geospatial, and heatmap views with ggplot2, plotly, dygraphs, and heatmaply, published as a navigable HTML document.</p></div>
+        <p class="outcome">Fully interactive report with dynamic charts and regional breakdowns.</p>
+        <div class="tags"><span class="tag">R</span><span class="tag">ggplot2</span><span class="tag">plotly</span><span class="tag">dygraphs</span><span class="tag">R Markdown</span></div>
+      </article>
     </div>
   </div>
 </section>
@@ -258,10 +290,10 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
     <h2 class="title" data-reveal>Toolbox</h2>
     <div class="skillsGrid">
       <div data-reveal><h3>AI &amp; LLM Engineering</h3><div class="tags"><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">LLM Integration</span><span class="tag">Prompt Engineering</span><span class="tag">Ollama</span><span class="tag">Gemini</span><span class="tag">OpenAI</span><span class="tag">Groq</span></div></div>
-      <div data-reveal><h3>Computer Vision</h3><div class="tags"><span class="tag">InsightFace / ArcFace</span><span class="tag">OpenCV</span><span class="tag">ONNX Runtime</span><span class="tag">TensorFlow</span><span class="tag">CNNs</span></div></div>
+      <div data-reveal><h3>Machine Learning &amp; CV</h3><div class="tags"><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">SVM</span><span class="tag">Gradient Boosting</span><span class="tag">InsightFace / ArcFace</span><span class="tag">OpenCV</span><span class="tag">ONNX Runtime</span><span class="tag">TensorFlow</span><span class="tag">CNNs</span></div></div>
       <div data-reveal><h3>Backend</h3><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Laravel / PHP</span><span class="tag">Node.js</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span><span class="tag">JWT / RBAC</span></div></div>
-      <div data-reveal><h3>Frontend</h3><div class="tags"><span class="tag">Vue 3</span><span class="tag">React</span><span class="tag">Flutter</span><span class="tag">TypeScript</span></div></div>
-      <div data-reveal><h3>Data &amp; Databases</h3><div class="tags"><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">SQL ETL</span><span class="tag">Power BI</span></div></div>
+      <div data-reveal><h3>Frontend</h3><div class="tags"><span class="tag">Vue 3</span><span class="tag">R</span><span class="tag">React</span><span class="tag">Flutter</span><span class="tag">TypeScript</span></div></div>
+      <div data-reveal><h3>Data &amp; Databases</h3><div class="tags"><span class="tag">Hadoop / MapReduce</span><span class="tag">HDFS</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">SQL ETL</span><span class="tag">Power BI</span></div></div>
       <div data-reveal><h3>Cloud &amp; DevOps</h3><div class="tags"><span class="tag">AWS (EC2, S3)</span><span class="tag">GCP</span><span class="tag">DigitalOcean</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Ansible</span><span class="tag">Nginx</span><span class="tag">Supervisor</span><span class="tag">Git</span><span class="tag">Linux</span></div></div>
     </div>
   </div>
