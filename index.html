@@ -3,8 +3,11 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-<title>Sumana Somineni | AI Software Developer</title>
-<meta name="description" content="Building production-ready AI, computer vision, and conversational systems, from model integration to full-stack deployment." />
+<title>Sumana Somineni — AI Software Developer</title>
+<meta name="description" content="AI Software Developer building production generative AI, agentic systems, and computer vision — from model integration to full-stack deployment. AWS Certified Generative AI Developer – Professional." />
+<meta property="og:title" content="Sumana Somineni — AI Software Developer" />
+<meta property="og:description" content="I ship AI that survives contact with production. Generative AI, agentic systems, and computer vision in regulated healthcare." />
+<meta property="og:type" content="website" />
 <link rel="preconnect" href="https://fonts.googleapis.com" />
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
 <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet" />
@@ -30,42 +33,51 @@ section{scroll-margin-top:72px}
 .nav .inner{max-width:1120px;margin:0 auto;padding:16px 24px;display:flex;align-items:center;justify-content:space-between}
 .logo{font-family:var(--fh);font-weight:800;font-size:1.2rem;color:#fff}
 .logo span{color:var(--cyan)}
-.links{display:flex;align-items:center;gap:28px}
-.links a{color:var(--txt-d2);font-size:.9rem;font-weight:500;transition:color .2s}
+.links{display:flex;align-items:center;gap:24px}
+.links a{color:var(--txt-d2);font-size:.88rem;font-weight:500;transition:color .2s}
 .links a:hover,.links a.active{color:#fff}
 .resumeBtn{border:1px solid var(--cyan);color:var(--cyan)!important;padding:7px 18px;border-radius:8px;transition:.2s}
 .resumeBtn:hover{background:var(--cyan);color:var(--bg-dark)!important}
 .burger{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px}
 .burger span{width:22px;height:2px;background:#fff;display:block}
-@media(max-width:760px){.burger{display:flex}.links{position:fixed;top:60px;left:0;right:0;background:rgba(10,22,42,.97);flex-direction:column;padding:24px;display:none}.links.open{display:flex}}
+@media(max-width:900px){.burger{display:flex}.links{position:fixed;top:60px;left:0;right:0;background:rgba(10,22,42,.97);flex-direction:column;padding:24px;display:none}.links.open{display:flex}}
 /* HERO */
-.hero{position:relative;height:100vh;min-height:640px;overflow:hidden;background:linear-gradient(135deg,var(--bg-dark),var(--bg-elev));display:flex;align-items:center}
+.hero{position:relative;min-height:100vh;overflow:hidden;background:linear-gradient(135deg,var(--bg-dark),var(--bg-elev));display:flex;align-items:center}
 .overlay{position:absolute;inset:0;z-index:1;background:linear-gradient(100deg,rgba(10,22,42,.55) 0%,rgba(10,22,42,.25) 55%,rgba(18,42,78,.10) 100%)}
 #ambient{position:absolute;inset:0;z-index:1;pointer-events:none}
-.heroContent{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 24px;width:100%;display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:stretch;height:100%}
-.heroText{min-width:0;align-self:center;padding:96px 0}
-.heroPhoto{position:relative;justify-self:end;align-self:end;width:100%;max-width:440px;pointer-events:none}
-.heroPhoto img{width:100%;height:auto;display:block;filter:saturate(.94) contrast(1.03);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 26%),linear-gradient(to bottom,#000 62%,transparent 99%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 26%),linear-gradient(to bottom,#000 62%,transparent 99%);mask-composite:intersect}
-.heroPhoto::before{content:'';position:absolute;left:8%;right:-6%;top:6%;bottom:0;background:radial-gradient(60% 55% at 60% 40%,rgba(99,211,255,.16),transparent 72%);z-index:-1}
+.heroContent{position:relative;z-index:2;max-width:1120px;margin:0 auto;padding:0 24px;width:100%;display:grid;grid-template-columns:1fr 1fr;gap:40px;align-items:stretch}
+.heroText{min-width:0;align-self:center;padding:120px 0 96px}
+.heroPhoto{position:relative;justify-self:end;align-self:center;width:100%;max-width:580px;margin-right:-40px;pointer-events:none}
+.heroPhoto img{width:100%;height:auto;display:block;filter:saturate(.95) contrast(1.03);-webkit-mask-image:linear-gradient(to right,transparent 0,#000 20%),linear-gradient(to bottom,#000 66%,transparent 99%),linear-gradient(to left,transparent 0,#000 8%);-webkit-mask-composite:source-in;mask-image:linear-gradient(to right,transparent 0,#000 20%),linear-gradient(to bottom,#000 66%,transparent 99%),linear-gradient(to left,transparent 0,#000 8%);mask-composite:intersect}
+.heroPhoto::before{content:'';position:absolute;left:6%;right:-4%;top:-4%;bottom:6%;background:radial-gradient(56% 56% at 58% 42%,rgba(99,211,255,.18),transparent 72%);z-index:-1}
 @media(max-width:900px){.heroContent{grid-template-columns:1fr;gap:28px}.heroPhoto{display:none}}
 .tagline{font-family:var(--fm);font-size:.78rem;letter-spacing:.28em;color:var(--cyan);margin-bottom:20px}
 .name{font-size:clamp(2.8rem,7vw,5.2rem);font-weight:800;color:#fff;margin-bottom:14px}
 .role{font-family:var(--fh);font-size:clamp(1.05rem,2vw,1.35rem);font-weight:600;color:var(--cyan);margin-bottom:14px}
-.heroLine{max-width:560px;color:var(--txt-d2);font-size:clamp(.95rem,1.5vw,1.05rem);margin-bottom:34px}
+.heroLine{max-width:560px;color:var(--txt-d2);font-size:clamp(.95rem,1.5vw,1.05rem);margin-bottom:24px}
+/* CERT PILL */
+.certPill{display:inline-flex;align-items:center;gap:10px;background:rgba(99,211,255,.09);border:1px solid rgba(99,211,255,.34);border-radius:999px;padding:8px 18px 8px 10px;margin-bottom:30px;transition:.25s}
+.certPill:hover{background:rgba(99,211,255,.16);border-color:var(--cyan);transform:translateY(-2px)}
+.certPill img{width:34px;height:34px;display:block;border-radius:4px}
+.certPill .fallback{width:34px;height:34px;border-radius:50%;background:linear-gradient(135deg,#ff9900,#ff6a00);display:flex;align-items:center;justify-content:center;font-family:var(--fh);font-weight:800;font-size:.62rem;color:#0a162a;letter-spacing:.02em}
+.certPill .ct{display:flex;flex-direction:column;line-height:1.25}
+.certPill .ct b{font-family:var(--fh);font-size:.82rem;font-weight:600;color:#fff}
+.certPill .ct span{font-family:var(--fm);font-size:.66rem;color:var(--cyan);letter-spacing:.08em;text-transform:uppercase}
 .ctas{display:flex;gap:16px;flex-wrap:wrap;margin-bottom:26px}
 .btnP{background:var(--cyan);color:var(--bg-dark);font-weight:600;padding:13px 28px;border-radius:10px;transition:transform .2s,box-shadow .2s}
 .btnP:hover{transform:translateY(-2px);box-shadow:0 8px 28px rgba(99,211,255,.35)}
 .btnG{border:1px solid var(--bdr-d);color:#fff;font-weight:500;padding:13px 28px;border-radius:10px;transition:border-color .2s,transform .2s}
 .btnG:hover{border-color:var(--cyan);transform:translateY(-2px)}
-.secLinks{display:flex;gap:22px}
+.secLinks{display:flex;gap:22px;flex-wrap:wrap}
 .secLinks a{color:var(--txt-d2);font-size:.88rem;border-bottom:1px solid transparent;transition:.2s}
 .secLinks a:hover{color:var(--cyan);border-color:var(--cyan)}
 .scrollDown{position:absolute;left:50%;bottom:22px;transform:translateX(-50%);z-index:3;background:none;border:none;cursor:pointer;padding:10px}
 .pulse{display:block;width:2px;height:44px;background:linear-gradient(var(--cyan),transparent);animation:pd 1.8s ease-in-out infinite}
 @keyframes pd{0%{transform:scaleY(.3);transform-origin:top;opacity:.4}50%{transform:scaleY(1);opacity:1}100%{transform:scaleY(.3);opacity:.4}}
-@media(max-width:600px){.heroText{text-align:center}.ctas,.secLinks{justify-content:center}}
+@media(max-width:600px){.heroText{text-align:center}.ctas,.secLinks{justify-content:center}.certPill{margin-left:auto;margin-right:auto}}
 /* CARDS */
-.about p{max-width:760px;color:var(--txt-l2);font-size:1.02rem;margin-bottom:14px}
+.about p{max-width:780px;color:var(--txt-l2);font-size:1.02rem;margin-bottom:14px}
+.about p strong{color:var(--txt-l);font-weight:600}
 .timeline{display:flex;flex-direction:column;gap:28px}
 .card{background:#fff;border:1px solid var(--bdr-l);border-radius:16px;padding:30px 32px;box-shadow:0 2px 14px rgba(19,26,38,.05)}
 .cardHead{display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;margin-bottom:4px}
@@ -73,6 +85,7 @@ section{scroll-margin-top:72px}
 .company{color:var(--blue);font-weight:600}
 .meta{font-family:var(--fm);font-size:.78rem;color:var(--txt-l2)}
 .summary{color:var(--txt-l2);font-size:.95rem;margin:10px 0 14px}
+.subhead{font-family:var(--fm);font-size:.72rem;letter-spacing:.14em;text-transform:uppercase;color:var(--blue);margin:18px 0 8px}
 .bullets{margin:0 0 16px 18px;display:flex;flex-direction:column;gap:8px}
 .bullets li{font-size:.93rem}
 .tags{display:flex;flex-wrap:wrap;gap:8px}
@@ -81,20 +94,38 @@ section{scroll-margin-top:72px}
 .pcard{background:#fff;border:1px solid var(--bdr-l);border-radius:16px;padding:30px;box-shadow:0 2px 14px rgba(19,26,38,.05);display:flex;flex-direction:column;gap:12px;transition:transform .25s,box-shadow .25s}
 .pcard:hover{transform:translateY(-4px);box-shadow:0 10px 32px rgba(19,26,38,.1)}
 .pcard h3{font-size:1.1rem}
+.pcard .tags{margin-top:auto;padding-top:4px}
 .context{font-family:var(--fm);font-size:.74rem;color:var(--blue)}
 .block strong{display:block;font-size:.78rem;text-transform:uppercase;letter-spacing:.1em;color:var(--txt-l2);margin-bottom:3px}
 .block p{font-size:.92rem}
 .outcome{border-left:3px solid var(--cyan);padding-left:12px;font-size:.92rem;font-weight:500}
+.repo{font-family:var(--fm);font-size:.75rem;color:var(--blue);border-bottom:1px solid rgba(46,111,176,.35);align-self:flex-start;transition:.2s}
+.repo:hover{color:var(--txt-l);border-color:var(--txt-l)}
 .metrics{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:28px;text-align:center}
 .num{font-family:var(--fh);font-size:clamp(2.2rem,4vw,3.2rem);font-weight:800;color:var(--cyan)}
 .mlabel{color:var(--txt-d2);font-size:.9rem;margin-top:6px}
 .skillsGrid{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:26px}
 .skillsGrid h3{font-size:.95rem;margin-bottom:12px;color:var(--blue)}
+/* EDU + CERTS */
+.twoCol{display:grid;grid-template-columns:repeat(auto-fit,minmax(320px,1fr));gap:28px}
+.eduItem{background:#fff;border:1px solid var(--bdr-l);border-radius:14px;padding:22px 24px;margin-bottom:16px}
+.eduItem h4{font-family:var(--fh);font-size:1rem;font-weight:600;margin-bottom:3px}
+.eduItem .meta{display:block;margin-bottom:6px}
+.eduItem p{font-size:.88rem;color:var(--txt-l2)}
+.certItem{background:#fff;border:1px solid var(--bdr-l);border-left:3px solid var(--cyan);border-radius:10px;padding:16px 20px;margin-bottom:14px;display:flex;justify-content:space-between;align-items:baseline;gap:14px;flex-wrap:wrap;transition:.2s}
+.certItem:hover{box-shadow:0 6px 20px rgba(19,26,38,.08)}
+.certItem h4{font-family:var(--fh);font-size:.94rem;font-weight:600}
+.certItem .issuer{font-size:.84rem;color:var(--txt-l2);display:block;margin-top:2px}
+.certItem .when{font-family:var(--fm);font-size:.74rem;color:var(--txt-l2);white-space:nowrap}
+.verify{font-family:var(--fm);font-size:.72rem;color:var(--blue);border-bottom:1px solid rgba(46,111,176,.35)}
+.awards{margin-top:8px}
+.awardItem{font-size:.9rem;color:var(--txt-l2);padding:8px 0 8px 16px;border-left:2px solid rgba(46,111,176,.25)}
+.awardItem b{color:var(--txt-l);font-weight:600}
 .contactBox{text-align:center;max-width:620px;margin:0 auto}
 .contactBox p{color:var(--txt-d2);margin-bottom:28px}
 .email{font-family:var(--fh);font-size:clamp(1.2rem,3vw,1.8rem);font-weight:600;color:#fff;border-bottom:2px solid var(--cyan);padding-bottom:4px;transition:color .2s}
 .email:hover{color:var(--cyan)}
-.contactLinks{display:flex;justify-content:center;gap:26px;margin-top:30px}
+.contactLinks{display:flex;justify-content:center;gap:26px;margin-top:30px;flex-wrap:wrap}
 .contactLinks a{color:var(--txt-d2);transition:color .2s}
 .contactLinks a:hover{color:var(--cyan)}
 footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);border-top:1px solid var(--bdr-d);background:var(--bg-dark)}
@@ -107,7 +138,8 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
   <div class="inner">
     <a href="#top" class="logo">SS<span>.</span></a>
     <nav class="links" id="navLinks">
-      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+      <a href="#about">About</a><a href="#experience">Experience</a><a href="#projects">Projects</a><a href="#skills">Skills</a><a href="#credentials">Credentials</a><a href="#contact">Contact</a>
+      <a href="Sumana_Somineni_Resume.pdf" class="resumeBtn" target="_blank">Resume</a>
     </nav>
     <button class="burger" id="burger" aria-label="Menu"><span></span><span></span><span></span></button>
   </div>
@@ -121,9 +153,19 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
     <p class="tagline" data-stagger>AI · FULL-STACK · PRODUCTION SYSTEMS</p>
     <h1 class="name" data-stagger>SUMANA<br/>SOMINENI</h1>
     <p class="role" data-stagger>AI Software Developer</p>
-    <p class="heroLine" data-stagger>Building production-ready AI, computer vision, and conversational systems, from model integration to full-stack deployment.</p>
+    <p class="heroLine" data-stagger>Building production generative AI, agentic systems, and computer vision — from model integration to full-stack deployment.</p>
+
+    <a class="certPill" data-stagger href="https://www.credly.com/badges/e4b376dd-71e7-45a1-af2a-3d5ae86f5091/public_url" target="_blank" rel="noopener">
+      <img src="aws-genai-badge.png" alt="AWS Certified Generative AI Developer – Professional" />
+      <span class="ct">
+        <b>AWS Certified Generative AI Developer – Professional</b>
+        <span>Verified · Aug 2026</span>
+      </span>
+    </a>
+
     <div class="ctas" data-stagger>
       <a href="#projects" class="btnP">View My Work</a>
+      <a href="Sumana_Somineni_Resume.pdf" class="btnG" target="_blank">Download Resume</a>
     </div>
     <div class="secLinks" data-stagger>
       <a href="https://www.linkedin.com/in/sumana-somineni09" target="_blank">LinkedIn</a>
@@ -142,9 +184,10 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
   <div class="container">
     <span class="label" data-reveal>About</span>
     <h2 class="title" data-reveal>I ship AI that survives contact with production.</h2>
-    <p data-reveal>Demos are easy. What I build has to run in a live healthcare platform, where latency, security, and a 78-year-old end-user all get a vote. I'm an AI Software Developer at CariCanary, an enterprise SaaS helping nursing homes and senior living communities operate efficiently and stay compliant. I own features end to end across Vue 3 frontends, Laravel/PHP APIs, and Python/FastAPI AI microservices.</p>
+    <p data-reveal>Demos are easy. What I build has to run in a live healthcare platform, where latency, security, and a 78-year-old end-user all get a vote. I'm an AI Software Developer at <strong>CariCanary</strong>, an enterprise SaaS helping nursing homes and senior living communities operate efficiently and stay compliant — owning features end-to-end across Vue 3 frontends, Laravel/PHP APIs, and Python/FastAPI AI microservices.</p>
+    <p data-reveal>Most of my work now lives at the intersection of <strong>generative AI and regulated data</strong>. I build extraction and orchestration pipelines on Amazon Bedrock, computer vision services that run every day in nine facilities, and agentic workflows in LangGraph — and I instrument all of it, because a system you can't measure is a system you can't defend.</p>
     <p data-reveal>Before I ship anything, I ask three questions: Does it scale? Is it secure? Can we measure the impact?</p>
-    <p data-reveal style="font-family:var(--fm);font-size:.85rem">Overland Park, KS | Authorized to work in the U.S. | Open to relocation and remote</p>
+    <p data-reveal style="font-family:var(--fm);font-size:.85rem">Overland Park, Kansas · Authorized to work in the U.S. · Open to relocation and remote</p>
   </div>
 </section>
 
@@ -153,49 +196,74 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
     <span class="label" data-reveal>Experience</span>
     <h2 class="title" data-reveal>Where I've built</h2>
     <div class="timeline">
+
       <article class="card" data-reveal>
-        <div class="cardHead"><h3>AI Software Developer · <span class="company">CariCanary</span></h3><span class="meta">Jan 2026 – Present · Remote</span></div>
-        <p class="summary">Production AI and full-stack healthcare workflows across Python/FastAPI, Vue 3, Laravel/PHP, MySQL, Redis, and DigitalOcean, supporting resident operations across 9 healthcare facilities.</p>
+        <div class="cardHead"><h3>AI Software Developer · <span class="company">CariCanary</span></h3><span class="meta">Jan 2026 – Present · Overland Park, KS</span></div>
+        <p class="summary">Production AI and full-stack healthcare workflows across Python/FastAPI, Amazon Bedrock, Vue 3, Laravel/PHP, MySQL, Redis, and DigitalOcean — supporting resident operations across 9 healthcare facilities.</p>
+
+        <p class="subhead">Generative AI · Document Extraction</p>
         <ul class="bullets">
-          <li>Architected a real-time facial-recognition microservice in Python/FastAPI (InsightFace, ArcFace, OpenCV, ONNX Runtime): ~95% accuracy on 100 validation images, ~2s end-to-end latency, deployed across 9 healthcare facilities.</li>
-          <li>Developed 25+ secure FastAPI REST endpoints for photo validation, facial enrollment, embedding generation, and individual and multi-person recognition, secured with JWT authentication and role-based access control (RBAC).</li>
+          <li>Cut referral processing from <strong>40 minutes to 7 minutes per document</strong> — an 82% reduction in staff review time — by building an AI extraction pipeline on Amazon Bedrock with a 4-member AI team.</li>
+          <li>Ingested medical histories up to 70 pages, including scanned records, through Python/FastAPI with PyMuPDF parsing, OCR fallback, and context-aware chunking for documents exceeding model context limits.</li>
+          <li>Auto-populated <strong>91% of required referral fields at 94% field-level accuracy</strong>, measured against staff-verified values across 500 referral packets, by orchestrating classification, extraction, validation, and retry stages with LangGraph and enforcing a Pydantic JSON schema across demographics, diagnoses, medications, allergies, physician, and insurance fields.</li>
+          <li>Lowered model-driven data-integrity risk in a HIPAA-regulated workflow by preventing direct LLM writes to production data: validated output passes through application authorization and persistence controls, with low-confidence fields routed to staff review.</li>
+          <li>Instrumented model <strong>observability</strong> across the extraction service with Amazon Bedrock Guardrails and CloudWatch, tracking safety violations, invocation latency, and failure rates.</li>
+        </ul>
+
+        <p class="subhead">Computer Vision · Attendance</p>
+        <ul class="bullets">
+          <li>Eliminated hand-recorded activity attendance across 9 healthcare facilities by building a facial-recognition service in Python/FastAPI (InsightFace, ArcFace, OpenCV, ONNX Runtime) that identifies residents in group photographs and flags unknown individuals — <strong>~95% accuracy across ~1,000 test face instances</strong> at ~2s end-to-end inference.</li>
+          <li>Improved recognition accuracy for elderly residents — under-represented in the base model's training distribution — by building a resident-specific validation set and tuning recognition thresholds against it.</li>
+          <li>Enabled product teams to ship AI features without ML expertise by exposing the recognition pipeline as 25+ secured FastAPI endpoints (JWT, RBAC, request validation) for enrollment, embedding generation, validation, and group recognition.</li>
+        </ul>
+
+        <p class="subhead">Platform · Reliability</p>
+        <ul class="bullets">
+          <li>Closed 3 recurring production defect classes that passed controlled testing but failed under live traffic, by diagnosing each from structured logs and converting it into an automated pre-release check.</li>
           <li>Built KPI dashboards for monthly and per-activity performance and individual resident attendance, plus automated in-app and email notification workflows (Laravel, Redis) that lifted engagement ~60% and cut manual staff follow-up ~90%.</li>
           <li>Established zero-downtime deployments via GitHub Actions, Ansible, DigitalOcean, Nginx, and Supervisor with health checks, versioned rollbacks, and CI-driven staging validation.</li>
         </ul>
-        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">InsightFace</span><span class="tag">ONNX</span><span class="tag">Vue 3</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">DigitalOcean</span></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Amazon Bedrock</span><span class="tag">LangGraph</span><span class="tag">Pydantic</span><span class="tag">PyMuPDF</span><span class="tag">InsightFace</span><span class="tag">ONNX</span><span class="tag">Vue 3</span><span class="tag">Laravel</span><span class="tag">MySQL</span><span class="tag">Redis</span><span class="tag">DigitalOcean</span></div>
       </article>
+
       <article class="card" data-reveal>
         <div class="cardHead"><h3>Research Assistant (AI/ML Software Development) · <span class="company">Eastern Kentucky University</span></h3><span class="meta">Aug 2024 – Dec 2025 · Richmond, KY</span></div>
-        <p class="summary">End-to-end conversational AI systems spanning full-stack development, RAG, LLM integration, controlled experimentation, and research publication.</p>
+        <p class="summary">End-to-end conversational AI systems spanning full-stack development, RAG, LLM integration, controlled experimentation, and research publication — in the CSIT AI Research Lab.</p>
         <ul class="bullets">
-          <li>Built a full-stack RAG-powered sales coaching role-play chatbot (Flutter, Flask, Gemini via LangChain) that won 1st place and $5,000 at Scholars Tank 2025.</li>
-          <li>Designed and benchmarked four conversational AI architectures on Llama 3.1 (local via Docker + Ollama, cloud via Groq, direct REST vs. LangChain) with reusable model-provider interfaces enabling local/cloud switching without duplicated integration code.</li>
-          <li>Ran 1,000+ controlled experiments across 100+ prompts, analyzed in Power BI: Cloud LangChain ~22.9s vs. Cloud Direct ~25.5s end-to-end at 100% turn success; isolated TTS as the largest latency contributor.</li>
-          <li>Co-authored a comparative research paper on latency, reliability, privacy, cost, and maintainability trade-offs.</li>
+          <li>Built a full-stack RAG-powered sales coaching role-play chatbot (Flutter, Flask, Gemini via LangChain) that won <strong>1st place and $5,000 at Scholars Tank 2025</strong>.</li>
+          <li>Designed a reusable Python/FastAPI <strong>offline evaluation harness</strong> and benchmarked four conversational AI architectures on Llama 3.1 — local (Docker + Ollama) and cloud (Groq), direct REST vs. LangChain — with reusable model-provider interfaces enabling local/cloud switching without duplicated integration code.</li>
+          <li>Ran <strong>1,000+ controlled experiments across 100+ prompts</strong>, analyzed in Power BI: Cloud LangChain ~22.9s vs. Cloud Direct ~25.5s end-to-end at 100% turn success; isolated text-to-speech as the largest latency contributor.</li>
+          <li>Co-authored a comparative research paper on latency, reliability, privacy, cost, and maintainability trade-offs (in preparation).</li>
         </ul>
         <div class="tags"><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">Gemini</span><span class="tag">Llama 3.1</span><span class="tag">Ollama</span><span class="tag">Docker</span><span class="tag">Groq</span><span class="tag">Flutter</span><span class="tag">Flask</span><span class="tag">Power BI</span></div>
       </article>
+
       <article class="card" data-reveal>
         <div class="cardHead"><h3>Software Engineer – Product &amp; Platform Engineering · <span class="company">NxtWave</span></h3><span class="meta">Jan 2022 – Aug 2024 · Hyderabad, India</span></div>
         <p class="summary">Backend, AI-integration, data, and platform features for a production learning platform serving 50K+ learners.</p>
         <ul class="bullets">
-          <li>Built the backend and LLM-integration workflow for an AI-powered interview coach (Python, FastAPI, OpenAI, speech-to-text), reducing manual interview evaluation by ~90%.</li>
-          <li>Migrated legacy monolith functionality into independently deployable microservices, reducing API latency by ~30% during peak usage.</li>
-          <li>Built Python/SQL ETL workflows processing 100K–1M+ records; automated tests and static analysis helped reduce production defects by ~40%.</li>
+          <li>Owned the AI interview backend — Python/FastAPI services, session state, LLM inference, speech-to-text and text-to-speech integration, and response evaluation — for a platform serving <strong>50K+ learners</strong>, reducing manual interview-evaluation effort <strong>~90%</strong>.</li>
+          <li>Built components of the RAG personalization pipeline — chunking and embedding learner resumes and course content into the <strong>Pinecone vector database</strong>, retrieving top-k candidate-specific context per question, and carrying multi-turn state through LangChain conversation memory so follow-ups conditioned on prior answers.</li>
+          <li>Improved LLM scoring consistency by replaying identical transcripts across repeated runs, increasing repeat-run score agreement to <strong>92%</strong> through fixed scoring rubrics and deterministic decoding settings.</li>
+          <li>Built in-browser proctoring for <strong>10K+ interview sessions</strong> using the browser MediaDevices and Screen Capture APIs for camera and screen recording, with Page Visibility and window blur events flagging tab switches and recordings persisted for human review and audit.</li>
+          <li>Migrated legacy monolith functionality into independently deployable microservices, reducing API latency <strong>~30%</strong> during peak usage.</li>
+          <li>Built Python/SQL ETL workflows processing 100K–1M+ records; automated tests and static analysis helped reduce production defects ~40%.</li>
           <li>Shipped backend features for enrollment, coding labs, progress tracking, and analytics (Node.js, TypeScript, Java, Spring Boot) plus React dashboards.</li>
-          <li>Deployed and operated services across AWS and GCP: EC2 for service hosting, S3 for asset and dataset storage, Cloud Run with IAM, Secret Manager, JWT, and RBAC.</li>
+          <li>Containerized and deployed backend and <strong>model-serving</strong> services with Docker and Kubernetes across AWS and GCP — EC2 for service hosting, S3 for asset and dataset storage, Cloud Run with IAM, Secret Manager, JWT, and RBAC.</li>
         </ul>
-        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">OpenAI</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">AWS</span><span class="tag">GCP</span></div>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">Pinecone</span><span class="tag">RAG</span><span class="tag">Node.js</span><span class="tag">TypeScript</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">PostgreSQL</span><span class="tag">Redis</span><span class="tag">AWS</span><span class="tag">GCP</span></div>
       </article>
+
       <article class="card" data-reveal>
         <div class="cardHead"><h3>Data Science Intern – Machine Learning · <span class="company">Cyberaegis IT Solutions</span></h3><span class="meta">Jun 2020 – Dec 2020 · Hyderabad, India</span></div>
-        <p class="summary">Real-time computer vision and ML inference pipelines. The seed of what I build today.</p>
+        <p class="summary">Real-time computer vision and ML inference pipelines — the seed of what I build today.</p>
         <ul class="bullets">
           <li>Engineered a real-time facial recognition system (Python, CNNs, TensorFlow, OpenCV) achieving 94.2% accuracy on 10K+ images with sub-100ms inference.</li>
           <li>Built end-to-end ML inference pipelines exposed via Flask REST APIs; designed SQL databases storing 1M+ prediction records.</li>
         </ul>
         <div class="tags"><span class="tag">Python</span><span class="tag">TensorFlow</span><span class="tag">OpenCV</span><span class="tag">CNNs</span><span class="tag">Flask</span><span class="tag">SQL</span></div>
       </article>
+
     </div>
   </div>
 </section>
@@ -205,54 +273,82 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
     <span class="label" data-reveal>Projects</span>
     <h2 class="title" data-reveal>Case studies</h2>
     <div class="grid">
+
+      <article class="pcard" data-reveal>
+        <span class="context">CariCanary · Production healthcare SaaS</span>
+        <h3>AI Referral Document Extraction</h3>
+        <div class="block"><strong>Problem</strong><p>Referral intake required staff to read medical packets up to 70 pages — including scanned records — and hand-key demographics, diagnoses, medications, allergies, physician, and insurance into the platform. Roughly 40 minutes per document, every time.</p></div>
+        <div class="block"><strong>What I built</strong><p>An extraction pipeline on Amazon Bedrock: PyMuPDF parsing with OCR fallback, context-aware chunking for documents exceeding model context limits, and LangGraph orchestration across classification, extraction, validation, and retry stages against a Pydantic schema. The model never writes to production data — validated output passes through the application's own authorization controls, and low-confidence fields route to staff review.</p></div>
+        <p class="outcome">40 min → 7 min per document · 91% of fields auto-populated · 94% field-level accuracy across 500 packets.</p>
+        <div class="tags"><span class="tag">Amazon Bedrock</span><span class="tag">LangGraph</span><span class="tag">Pydantic</span><span class="tag">PyMuPDF</span><span class="tag">OCR</span><span class="tag">FastAPI</span><span class="tag">HIPAA</span></div>
+      </article>
+
       <article class="pcard" data-reveal>
         <span class="context">CariCanary · Production healthcare SaaS</span>
         <h3>Facial Recognition &amp; Automated Attendance</h3>
-        <div class="block"><strong>Problem</strong><p>Staff at senior-living facilities tracked resident attendance manually, which was slow, error-prone, and hard to audit.</p></div>
-        <div class="block"><strong>What I built</strong><p>Real-time facial-recognition microservice: Python/FastAPI with InsightFace/ArcFace and ONNX Runtime, integrated with Vue 3 and Laravel through 25+ secured REST endpoints.</p></div>
-        <p class="outcome">~95% recognition accuracy · ~2s end-to-end latency · 9 facilities supported.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">InsightFace</span><span class="tag">ONNX</span><span class="tag">Vue 3</span><span class="tag">Laravel</span></div>
+        <div class="block"><strong>Problem</strong><p>Staff at senior-living facilities tracked resident attendance manually — slow, error-prone, and hard to audit.</p></div>
+        <div class="block"><strong>What I built</strong><p>Real-time facial-recognition microservice: Python/FastAPI with InsightFace/ArcFace and ONNX Runtime, integrated with Vue 3 and Laravel through 25+ secured REST endpoints. Recognition thresholds tuned against a resident-specific validation set, since elderly faces are under-represented in the base model's training distribution.</p></div>
+        <p class="outcome">~95% recognition accuracy across ~1,000 test face instances · ~2s end-to-end latency · 9 facilities supported.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">InsightFace</span><span class="tag">ArcFace</span><span class="tag">ONNX</span><span class="tag">Vue 3</span><span class="tag">Laravel</span></div>
       </article>
+
+      <article class="pcard" data-reveal>
+        <span class="context">Ongoing · 2024 – Present</span>
+        <h3>Conversational AI Architecture &amp; Agentic Workflow Lab</h3>
+        <div class="block"><strong>Problem</strong><p>I've been rebuilding the same conversational system for a year — chatbot, then generative AI, then RAG, then LangChain, then LangGraph, then agentic workflows. Each layer raised the same question: what does it actually cost, and what does it actually buy?</p></div>
+        <div class="block"><strong>What I built</strong><p>A per-turn instrumented harness that logs routing decisions, embedding-model choice, and token cost across local (Docker/Ollama) and cloud (Groq) execution — with dialogue state persisted in LangGraph, a lightweight Hugging Face intent router ahead of the generation layer, and node-level retry and fallback paths.</p></div>
+        <p class="outcome">~80% fewer prompt tokens per turn by turn 10 · ~60% fewer retrieval and cloud-model calls at equivalent answer quality · ~90% of failed turns recovered — all across the same 100-conversation set.</p>
+        <a class="repo" href="https://github.com/sumana-somineni09/conversation-ai-comparison" target="_blank">View on GitHub →</a>
+        <div class="tags"><span class="tag">LangGraph</span><span class="tag">Agentic AI</span><span class="tag">Hugging Face</span><span class="tag">RAG</span><span class="tag">pgvector</span><span class="tag">Ollama</span><span class="tag">Groq</span><span class="tag">STT/TTS</span></div>
+      </article>
+
       <article class="pcard" data-reveal>
         <span class="context">EKU College of Business · Scholars Tank 2025 Winner</span>
         <h3>RAG-Powered Sales Coaching Chatbot</h3>
         <div class="block"><strong>Problem</strong><p>Students preparing for sales competitions had no way to rehearse realistic buyer conversations on their own.</p></div>
-        <div class="block"><strong>What I built</strong><p>Full-stack role-play chatbot built with a Flutter interface, Flask REST APIs, and Gemini via LangChain, with RAG over uploaded sales-competition documents.</p></div>
+        <div class="block"><strong>What I built</strong><p>Full-stack role-play chatbot — Flutter interface, Flask REST APIs, Gemini via LangChain, with RAG over uploaded sales-competition documents.</p></div>
         <p class="outcome">1st place + $5,000 at Scholars Tank 2025 · adopted by students for competition practice.</p>
         <div class="tags"><span class="tag">Gemini</span><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">Flutter</span><span class="tag">Flask</span></div>
       </article>
+
       <article class="pcard" data-reveal>
         <span class="context">EKU AI Research Lab · Co-authored paper</span>
         <h3>Comparative LLM Systems Research</h3>
-        <div class="block"><strong>Problem</strong><p>Which matters more for conversational AI performance: where the model runs, or how it's orchestrated?</p></div>
+        <div class="block"><strong>Problem</strong><p>Which matters more for conversational AI performance — where the model runs, or how it's orchestrated?</p></div>
         <div class="block"><strong>What I built</strong><p>Four end-to-end architectures on Llama 3.1 (Local/Cloud × Direct/LangChain) sharing one speech pipeline with per-stage latency logging; 1,000+ controlled runs analyzed in Power BI.</p></div>
         <p class="outcome">Cloud LangChain ~22.9s vs. Cloud Direct ~25.5s · deployment location outweighed orchestration overhead · TTS the top latency contributor.</p>
+        <a class="repo" href="https://github.com/sumana-somineni09/conversation-ai-comparison" target="_blank">View on GitHub →</a>
         <div class="tags"><span class="tag">Llama 3.1</span><span class="tag">Ollama</span><span class="tag">Docker</span><span class="tag">Groq</span><span class="tag">LangChain</span><span class="tag">Power BI</span></div>
       </article>
+
+      <article class="pcard" data-reveal>
+        <span class="context">Personal project · Deployed</span>
+        <h3>Evidence-Based Claim Verification</h3>
+        <div class="block"><strong>Problem</strong><p>I first built this as a classic fake-news classifier: TF-IDF over 72,000 articles, five models, &gt;95% accuracy. Then I looked closer at what it had learned. It wasn't detecting falsehood — it was detecting <em>writing style</em>. The benchmark was flattering me. So I rebuilt it.</p></div>
+        <div class="block"><strong>What I built</strong><p>A six-stage pipeline that decomposes text into atomic factual claims, retrieves supporting and refuting evidence from fact-check databases and the open web, and returns verdicts with citations. Natural-language-inference stance classification distinguishes topically adjacent evidence from claim-relevant evidence. Prompt-hash disk caching and difficulty-based model routing (Llama 3.3 70B for reasoning, 3.1 8B for classification) cut API consumption ~60%, keeping ~40 LLM calls per document inside a free tier.</p></div>
+        <p class="outcome">0.46 four-way verdict accuracy on a stratified AVeriTeC sample vs. a 0.30 majority-class baseline (n=37). Lower than the classifier it replaced — and the number I trust.</p>
+        <a class="repo" href="https://github.com/sumana-somineni09/fake-news-detection" target="_blank">View on GitHub →</a>
+        <div class="tags"><span class="tag">Llama 3.3</span><span class="tag">NLI</span><span class="tag">Information Retrieval</span><span class="tag">FastAPI</span><span class="tag">Docker</span><span class="tag">AVeriTeC</span></div>
+      </article>
+
       <article class="pcard" data-reveal>
         <span class="context">NxtWave · 50K+ learner platform</span>
         <h3>AI Interview Coach</h3>
         <div class="block"><strong>Problem</strong><p>Manual mock-interview evaluation couldn't scale across a 50K+ learner platform.</p></div>
-        <div class="block"><strong>What I built</strong><p>Speech-to-feedback pipeline covering transcription, prompt construction, LLM evaluation, and response parsing behind FastAPI REST APIs.</p></div>
-        <p class="outcome">~90% reduction in manual interview evaluation · deployed in production.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">OpenAI</span><span class="tag">Speech-to-Text</span></div>
+        <div class="block"><strong>What I built</strong><p>Speech-to-feedback pipeline — transcription, prompt construction, LLM evaluation, and response parsing behind FastAPI REST APIs — with RAG personalization over learner resumes and course content in Pinecone, and multi-turn state through LangChain memory.</p></div>
+        <p class="outcome">~90% reduction in manual interview evaluation · deployed in production for 50K+ learners.</p>
+        <div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">LangChain</span><span class="tag">Pinecone</span><span class="tag">Speech-to-Text</span></div>
       </article>
-      <article class="pcard" data-reveal>
-        <span class="context">Personal project · Deployed</span>
-        <h3>Fake News Detection System</h3>
-        <div class="block"><strong>Problem</strong><p>Misinformation spreads faster than fact-checkers can respond, and readers have no quick way to gauge whether an article is trustworthy.</p></div>
-        <div class="block"><strong>What I built</strong><p>End-to-end NLP classifier over 72,000 articles: cleaning, tokenization, and TF-IDF feeding five models (Logistic Regression, Decision Tree, Random Forest, Naive Bayes, Gradient Boosting) tuned with GridSearchCV, served through a containerized FastAPI REST API with an interactive UI.</p></div>
-        <p class="outcome">&gt;95% accuracy on the top models · 36K reliable / 36K unreliable articles · deployed and publicly accessible.</p>
-        <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">NLP</span><span class="tag">FastAPI</span><span class="tag">Docker</span></div>
-      </article>
+
       <article class="pcard" data-reveal>
         <span class="context">Personal project · In progress</span>
         <h3>Email Spam Classification</h3>
-        <div class="block"><strong>Problem</strong><p>Spam filters have to be both accurate and cheap to run at volume, and it isn't obvious whether a modern LLM beats a classical model at the job.</p></div>
+        <div class="block"><strong>Problem</strong><p>Spam filters have to be both accurate and cheap to run at volume — and it isn't obvious whether a modern LLM beats a classical model at the job.</p></div>
         <div class="block"><strong>What I built</strong><p>TF-IDF pipeline (5,000 features) over the Enron corpus comparing SVM, Logistic Regression, and Decision Tree with confusion-matrix analysis. Currently extending it with a zero-shot LLM baseline benchmarked on accuracy, latency, and cost.</p></div>
         <p class="outcome">SVM 98.4% accuracy (F1 0.985) · Logistic Regression 98.2% · Decision Tree 91.5%.</p>
         <div class="tags"><span class="tag">Python</span><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">SVM</span><span class="tag">NLP</span></div>
       </article>
+
       <article class="pcard" data-reveal>
         <span class="context">M.S. coursework · Big Data</span>
         <h3>Supermarket Sales Analysis</h3>
@@ -261,6 +357,7 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
         <p class="outcome">Five comparative visualizations including a multidimensional product-line breakdown.</p>
         <div class="tags"><span class="tag">Hadoop</span><span class="tag">MapReduce</span><span class="tag">HDFS</span><span class="tag">Python</span><span class="tag">Linux</span></div>
       </article>
+
       <article class="pcard" data-reveal>
         <span class="context">M.S. coursework · Data Visualization</span>
         <h3>COVID-19 Analysis, South Korea</h3>
@@ -269,6 +366,7 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
         <p class="outcome">Fully interactive report with dynamic charts and regional breakdowns.</p>
         <div class="tags"><span class="tag">R</span><span class="tag">ggplot2</span><span class="tag">plotly</span><span class="tag">dygraphs</span><span class="tag">R Markdown</span></div>
       </article>
+
     </div>
   </div>
 </section>
@@ -276,10 +374,10 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
 <section class="sec dark">
   <div class="container">
     <div class="metrics">
-      <div data-reveal><div class="num" data-count="95" data-suffix="%">0</div><div class="mlabel">Facial-recognition accuracy</div></div>
-      <div data-reveal><div class="num" data-count="25" data-suffix="+">0</div><div class="mlabel">REST APIs across 3 service layers</div></div>
-      <div data-reveal><div class="num" data-count="1000" data-suffix="+">0</div><div class="mlabel">Controlled LLM experiments</div></div>
-      <div data-reveal><div class="num" data-count="50" data-suffix="K+">0</div><div class="mlabel">Learners on platform at NxtWave</div></div>
+      <div data-reveal><div class="num" data-count="82" data-suffix="%">82%</div><div class="mlabel">Cut in referral processing time</div></div>
+      <div data-reveal><div class="num" data-count="95" data-suffix="%">95%</div><div class="mlabel">Facial-recognition accuracy</div></div>
+      <div data-reveal><div class="num" data-count="1000" data-suffix="+">1,000+</div><div class="mlabel">Controlled LLM experiments</div></div>
+      <div data-reveal><div class="num" data-count="50" data-suffix="K+">50K+</div><div class="mlabel">Learners served at NxtWave</div></div>
     </div>
   </div>
 </section>
@@ -289,12 +387,101 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
     <span class="label" data-reveal>Skills</span>
     <h2 class="title" data-reveal>Toolbox</h2>
     <div class="skillsGrid">
-      <div data-reveal><h3>AI &amp; LLM Engineering</h3><div class="tags"><span class="tag">LangChain</span><span class="tag">RAG</span><span class="tag">LLM Integration</span><span class="tag">Prompt Engineering</span><span class="tag">Ollama</span><span class="tag">Gemini</span><span class="tag">OpenAI</span><span class="tag">Groq</span></div></div>
-      <div data-reveal><h3>Machine Learning &amp; CV</h3><div class="tags"><span class="tag">scikit-learn</span><span class="tag">TF-IDF</span><span class="tag">SVM</span><span class="tag">Gradient Boosting</span><span class="tag">InsightFace / ArcFace</span><span class="tag">OpenCV</span><span class="tag">ONNX Runtime</span><span class="tag">TensorFlow</span><span class="tag">CNNs</span></div></div>
-      <div data-reveal><h3>Backend</h3><div class="tags"><span class="tag">Python</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Laravel / PHP</span><span class="tag">Node.js</span><span class="tag">Java</span><span class="tag">Spring Boot</span><span class="tag">REST APIs</span><span class="tag">JWT / RBAC</span></div></div>
-      <div data-reveal><h3>Frontend</h3><div class="tags"><span class="tag">Vue 3</span><span class="tag">R</span><span class="tag">React</span><span class="tag">Flutter</span><span class="tag">TypeScript</span></div></div>
-      <div data-reveal><h3>Data &amp; Databases</h3><div class="tags"><span class="tag">Hadoop / MapReduce</span><span class="tag">HDFS</span><span class="tag">MySQL</span><span class="tag">PostgreSQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">SQL ETL</span><span class="tag">Power BI</span></div></div>
-      <div data-reveal><h3>Cloud &amp; DevOps</h3><div class="tags"><span class="tag">AWS (EC2, S3)</span><span class="tag">GCP</span><span class="tag">DigitalOcean</span><span class="tag">Docker</span><span class="tag">GitHub Actions</span><span class="tag">Ansible</span><span class="tag">Nginx</span><span class="tag">Supervisor</span><span class="tag">Git</span><span class="tag">Linux</span></div></div>
+      <div data-reveal><h3>Generative AI &amp; ML</h3><div class="tags"><span class="tag">LLMs</span><span class="tag">RAG</span><span class="tag">Agentic AI Workflows</span><span class="tag">LLM Evaluation &amp; Benchmarking</span><span class="tag">Prompt Engineering</span><span class="tag">Model Fine-Tuning</span><span class="tag">NLP</span><span class="tag">Computer Vision</span><span class="tag">Deep Learning</span><span class="tag">Experiment Design</span><span class="tag">A/B Testing</span><span class="tag">MLOps</span><span class="tag">Model Observability</span><span class="tag">MLflow</span><span class="tag">Weights &amp; Biases</span></div></div>
+      <div data-reveal><h3>Frameworks &amp; Libraries</h3><div class="tags"><span class="tag">LangChain</span><span class="tag">LangGraph</span><span class="tag">FastAPI</span><span class="tag">Flask</span><span class="tag">Hugging Face</span><span class="tag">PyTorch</span><span class="tag">TensorFlow</span><span class="tag">scikit-learn</span><span class="tag">InsightFace</span><span class="tag">ArcFace</span><span class="tag">OpenCV</span><span class="tag">ONNX Runtime</span><span class="tag">PyMuPDF</span><span class="tag">Pydantic</span></div></div>
+      <div data-reveal><h3>Models &amp; Platforms</h3><div class="tags"><span class="tag">Amazon Bedrock</span><span class="tag">Bedrock Guardrails</span><span class="tag">Claude</span><span class="tag">Llama 3.1 / 3.3</span><span class="tag">Gemini</span><span class="tag">OpenAI GPT</span><span class="tag">Ollama</span><span class="tag">Groq</span></div></div>
+      <div data-reveal><h3>Languages &amp; Web</h3><div class="tags"><span class="tag">Python</span><span class="tag">Java</span><span class="tag">JavaScript</span><span class="tag">TypeScript</span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">Vue 3</span><span class="tag">React</span><span class="tag">Node.js / Express</span><span class="tag">Spring Boot</span><span class="tag">Laravel / PHP</span><span class="tag">Flutter</span><span class="tag">REST APIs</span><span class="tag">Microservices</span></div></div>
+      <div data-reveal><h3>Cloud &amp; DevOps</h3><div class="tags"><span class="tag">AWS (Bedrock, Guardrails, CloudWatch, EC2, S3)</span><span class="tag">GCP (Cloud Run, IAM, Secret Manager)</span><span class="tag">Docker</span><span class="tag">Kubernetes</span><span class="tag">DigitalOcean</span><span class="tag">Nginx</span><span class="tag">Ansible</span><span class="tag">GitHub Actions</span><span class="tag">CI/CD</span><span class="tag">Linux</span></div></div>
+      <div data-reveal><h3>Data &amp; Practices</h3><div class="tags"><span class="tag">Vector Databases (Pinecone, pgvector)</span><span class="tag">PostgreSQL</span><span class="tag">MySQL</span><span class="tag">MongoDB</span><span class="tag">Redis</span><span class="tag">Vector Search</span><span class="tag">Hadoop / MapReduce</span><span class="tag">pandas</span><span class="tag">NumPy</span><span class="tag">Power BI</span><span class="tag">JWT / RBAC</span><span class="tag">Agile / Scrum</span></div></div>
+    </div>
+  </div>
+</section>
+
+<section id="credentials" class="sec" style="background:#eef2f7">
+  <div class="container">
+    <span class="label" data-reveal>Credentials</span>
+    <h2 class="title" data-reveal>Education &amp; certifications</h2>
+    <div class="twoCol">
+
+      <div data-reveal>
+        <h3 style="font-size:.95rem;color:var(--blue);margin-bottom:14px">Education</h3>
+        <div class="eduItem">
+          <h4>M.S. Computer Science — Artificial Intelligence in Data Science</h4>
+          <span class="meta">Eastern Kentucky University · Richmond, KY · Aug 2024 – Dec 2025 · GPA 4.0</span>
+          <p>Coursework: Artificial Intelligence, Machine Learning, Big Data, Databases &amp; Algorithms</p>
+        </div>
+        <div class="eduItem">
+          <h4>B.Tech, Electronics &amp; Communications Engineering</h4>
+          <span class="meta">Rajiv Gandhi University of Knowledge Technologies (RGUKT) · Basar, India · Jun 2018 – May 2022 · GPA 3.36</span>
+        </div>
+
+        <h3 style="font-size:.95rem;color:var(--blue);margin:26px 0 10px">Awards</h3>
+        <div class="awards">
+          <p class="awardItem"><b>1st Place &amp; $5,000</b> — EKU Scholars Tank Competition, 2025</p>
+          <p class="awardItem"><b>Certificate of Achievement</b> — CSIT AI Research Lab, Eastern Kentucky University</p>
+        </div>
+      </div>
+
+      <div data-reveal>
+        <h3 style="font-size:.95rem;color:var(--blue);margin-bottom:14px">Certifications</h3>
+
+        <div class="certItem">
+          <div>
+            <h4>AWS Certified Generative AI Developer – Professional</h4>
+            <span class="issuer">Amazon Web Services · AIP-C01 · <a class="verify" href="https://www.credly.com/badges/e4b376dd-71e7-45a1-af2a-3d5ae86f5091/public_url" target="_blank" rel="noopener">Verify</a></span>
+          </div>
+          <span class="when">Aug 2026</span>
+        </div>
+
+        <div class="certItem">
+          <div>
+            <h4>University Certificate — Artificial Intelligence in Data Science</h4>
+            <span class="issuer">Eastern Kentucky University</span>
+          </div>
+          <span class="when">Dec 2025</span>
+        </div>
+
+        <div class="certItem">
+          <div>
+            <h4>Certificate of Achievement — CSIT AI Research Lab</h4>
+            <span class="issuer">Eastern Kentucky University · LLM systems research</span>
+          </div>
+          <span class="when">Nov 2025</span>
+        </div>
+
+        <div class="certItem">
+          <div>
+            <h4>AWS Educate — Introduction to Generative AI</h4>
+            <span class="issuer">Amazon Web Services</span>
+          </div>
+          <span class="when">Jan 2026</span>
+        </div>
+
+        <div class="certItem">
+          <div>
+            <h4>Developer Foundations — Git &amp; Command Line</h4>
+            <span class="issuer">NxtWave</span>
+          </div>
+          <span class="when">May 2024</span>
+        </div>
+
+        <div class="certItem">
+          <div>
+            <h4>Programming Foundations with Python</h4>
+            <span class="issuer">NxtWave</span>
+          </div>
+          <span class="when">May 2024</span>
+        </div>
+
+        <div class="certItem">
+          <div>
+            <h4>Introduction to Databases</h4>
+            <span class="issuer">NxtWave</span>
+          </div>
+          <span class="when">Mar 2024</span>
+        </div>
+      </div>
+
     </div>
   </div>
 </section>
@@ -304,11 +491,12 @@ footer{text-align:center;padding:26px 0;font-size:.8rem;color:var(--txt-d2);bord
     <div class="contactBox" data-reveal>
       <span class="label">Contact</span>
       <h2 class="title" style="margin-bottom:16px">Let's build something that ships.</h2>
-      <p>Open to AI Software Engineer, Applied AI, and Full-Stack AI roles.</p>
+      <p>Open to AI Software Engineer, Applied AI, and Full-Stack AI roles. Overland Park, KS · open to relocation and remote.</p>
       <a class="email" href="mailto:sumanasomineni0909@gmail.com">sumanasomineni0909@gmail.com</a>
       <div class="contactLinks">
         <a href="https://www.linkedin.com/in/sumana-somineni09" target="_blank">LinkedIn</a>
         <a href="https://github.com/sumana-somineni09" target="_blank">GitHub</a>
+        <a href="Sumana_Somineni_Resume.pdf" target="_blank">Resume</a>
       </div>
     </div>
   </div>
@@ -330,7 +518,7 @@ document.querySelectorAll('#navLinks a').forEach(a => a.addEventListener('click'
 /* hero entrance */
 if (!reduced) {
   document.querySelectorAll('[data-stagger]').forEach((el, i) => {
-    el.style.cssText += 'opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease;transition-delay:' + (0.25 + i * 0.14) + 's';
+    el.style.cssText += 'opacity:0;transform:translateY(26px);transition:opacity 1s ease,transform 1s ease;transition-delay:' + (0.25 + i * 0.12) + 's';
     requestAnimationFrame(() => requestAnimationFrame(() => { el.style.opacity = 1; el.style.transform = 'none'; }));
   });
 }
@@ -339,7 +527,7 @@ if (!reduced) {
 const io = new IntersectionObserver(es => es.forEach(e => { if (e.isIntersecting) { e.target.classList.add('in'); io.unobserve(e.target); } }), {rootMargin:'0px 0px -10%'});
 document.querySelectorAll('[data-reveal]').forEach(el => io.observe(el));
 
-/* count-up (once) */
+/* count-up (once) — HTML already holds the final value, so it never shows 0 if JS is blocked */
 const cio = new IntersectionObserver(es => es.forEach(e => {
   if (!e.isIntersecting) return;
   const el = e.target, v = +el.dataset.count, sfx = el.dataset.suffix || '';
